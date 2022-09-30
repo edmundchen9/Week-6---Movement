@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//changed mass of blue cube
 public class MoveObject02 : MonoBehaviour
 {
     Rigidbody rigidbody;

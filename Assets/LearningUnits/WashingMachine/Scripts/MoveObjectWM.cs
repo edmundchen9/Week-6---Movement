@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //i changed the mass of blue cube
-public class MoveObject04 : MonoBehaviour
+public class MoveObjectWM : MonoBehaviour
 {
-    [SerializeField] Vector3 moveDirection;
+    [SerializeField] Quaternion moveDirection;
+    public Rigidbody rigidbody;
     // Start is called before the first frame update
     void Start()
     {
-
+        rigidbody = GetComponent<Rigidbody>();
     }
     
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position;
+        rigidbody.AddTorque(transform.up * 50);
+        rigidbody.AddTorque(transform.right * 50);
     }
 }

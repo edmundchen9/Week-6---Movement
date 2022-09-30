@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //i changed the mass of blue cube
-public class MoveObject04 : MonoBehaviour
+public class MoveObjectRBWM : MonoBehaviour
 {
     [SerializeField] Vector3 moveDirection;
     // Start is called before the first frame update
